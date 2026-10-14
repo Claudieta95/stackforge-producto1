@@ -1,5 +1,8 @@
 import { usuarios } from "./datos.js";
 
+const tablaUsuarios = document.getElementById("tablaUsuarios");
+const formUsuario = document.getElementById("formUsuario");
+
 function mostrarUsuarios() {
     tablaUsuarios.innerHTML = "";
 
@@ -38,3 +41,27 @@ function mostrarUsuarios() {
 }
 
 mostrarUsuarios();
+
+formUsuario.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    console.log(nombre, email, password);
+
+    const nuevoUsuario = {
+    id: Math.max(0, ...usuarios.map(u => u.id)) + 1,
+    nombre: nombre,
+    email: email,
+    password: password
+};
+
+usuarios.push(nuevoUsuario);
+
+mostrarUsuarios();
+
+formUsuario.reset();
+
+});
