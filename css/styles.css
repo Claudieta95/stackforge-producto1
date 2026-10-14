@@ -91,3 +91,36 @@ p {
     background-color: #172642;
     color: #FFFFFF;
 }
+
+/* Usuarios */
+
+.boton-alta,
+.boton-borrar {
+    background-color: #213456;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.boton-alta:hover,
+.boton-borrar:hover {
+    background-color: #172642;
+    color: #FFFFFF;
+}
+
+.boton-borrar {
+    font-size: 16px;
+    padding: 6px 12px;
+}
+
+.tabla-usuarios {
+    font-size: 18px;
+}
+
+.tabla-usuarios th {
+    color: #213456;
+    font-weight: bold;
+}
