@@ -1,4 +1,3 @@
-
 // Usuarios de ejemplo
 export const usuarios = [
   {

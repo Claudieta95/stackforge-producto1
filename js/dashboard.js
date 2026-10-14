@@ -40,3 +40,22 @@ intercambios.forEach(function(intercambio) {
 
     contenedor.appendChild(columna);
 });
+
+// Mostrar el usuario que ha iniciado sesión
+const enlaceLogin = document.getElementById("enlace-login");
+const botonCerrar = document.getElementById("cerrar-sesion");
+
+const usuarioEmail = sessionStorage.getItem("usuarioEmail");
+
+if (usuarioEmail) {
+    enlaceLogin.textContent = usuarioEmail;
+    botonCerrar.hidden = false;
+}
+
+// Cerrar sesión
+botonCerrar.addEventListener("click", function() {
+    sessionStorage.removeItem("usuarioEmail");
+
+    enlaceLogin.textContent = "Iniciar sesión";
+    botonCerrar.hidden = true;
+});

@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #F8FAFF;
     color: #213456;
     margin: 0;
@@ -90,4 +91,26 @@ p {
 .boton-login:hover {
     background-color: #172642;
     color: #FFFFFF;
+}
+
+/* Animación de las tarjetas */
+.tarjeta-intercambio {
+    animation: aparecer 0.5s ease;
+    transition: transform 0.2s ease;
+}
+
+.tarjeta-intercambio:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
