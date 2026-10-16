@@ -13,7 +13,46 @@
 </head>
 <body>
 
-    <!-- Navbar común: pendiente de incorporar -->
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">StackForge</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuNavegacion"
+                aria-controls="menuNavegacion"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNavegacion">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="usuarios.html">Usuarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="intercambios.html">Intercambios</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html" id="enlace-login">Iniciar sesión</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="nav-link" id="cerrar-sesion" hidden>
+                        Cerrar sesión
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
     <main class="container mt-5">
 
@@ -81,6 +120,12 @@
         </div>
 
     </main>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript de Usuarios -->
 <script type="module" src="js/usuarios.js"></script>
+
 </body>
 </html>
