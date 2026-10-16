@@ -117,10 +117,16 @@ p {
 }
 
 .tabla-usuarios {
-    font-size: 18px;
+    font-size: 16px;
+    --bs-table-bg: #F8FAFF;
+    --bs-table-color: #213456;
 }
 
 .tabla-usuarios th {
     color: #213456;
     font-weight: bold;
+}
+
+.tabla-usuarios td {
+    vertical-align: middle;
 }
