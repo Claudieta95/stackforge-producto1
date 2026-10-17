@@ -25,6 +25,7 @@ export function renderizarListadoGestion() {
             ? `${partesFecha[2]}/${partesFecha[1]}/${partesFecha[0]}` 
             : intercambio.fecha;
 
+
         // Estructura responsive (Bootstrap col-12 col-md-6)
         const columna = document.createElement("div");
         columna.className = "col-12 col-md-6";
